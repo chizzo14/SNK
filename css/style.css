@@ -202,11 +202,6 @@ hr {
     width: 90%; } }
 
 /* E-SHOP .CSS */
-.EShop {
-  background-image: url(https://i.pinimg.com/originals/09/a4/58/09a4582c26324a6077dd920438b53e9a.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: unset; }
 
 .block {
   display: block;
@@ -254,7 +249,10 @@ select {
   grid-gap: 20px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, auto);
-  grid-template-areas: "header header header" "contenido contenido sidebar" "widget-1 widget-2 sidebar" "footer footer footer"; }
+  grid-template-areas: "header header header"
+ "contenido contenido sidebar"
+ "widget-1 widget-2 sidebar"
+ "footer footer footer"; }
 
 .contenedor > div,
 .contenedor .header,
@@ -314,7 +312,11 @@ select {
 
 @media screen and (max-width: 768px) {
   .contenedor {
-    grid-template-areas: "header header header" "contenido contenido contenido" "sidebar sidebar sidebar" "widget-1 widget-1 widget-2" "footer footer footer"; } }
+    grid-template-areas: "header header header"
+ "contenido contenido contenido"
+ "sidebar sidebar sidebar"
+ "widget-1 widget-1 widget-2"
+ "footer footer footer"; } }
 
 .foto-responsive {
   width: 90%;

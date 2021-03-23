@@ -400,7 +400,7 @@ select {
 
 .carta-image {
   grid-area: image;
-  background: url("/img/eren.png");
+  background: url(../img/eren.png);
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-size: cover; }
@@ -416,12 +416,12 @@ select {
   grid-area: stats; }
 
 .mikasa {
-  background: url(/img/mikasa.png);
+  background: url(../img/mikasa.png);
   background-size: cover;
   background-repeat: no-repeat; }
 
 .armin {
-  background: url(/img/armin.jpg);
+  background: url(../img/armin.jpg);
   background-size: cover;
   background-position: center; }
 

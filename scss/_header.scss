@@ -1,0 +1,53 @@
+
+header {
+    div img {
+      width: 50%;
+      margin-top: -25px;
+      text-align: center;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      animation-duration: 5s;
+      animation-name: aparecer;
+    }
+  
+    nav {
+      float: right;
+  
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      li {
+        display: inline-block;
+        margin-left: 70px;
+        padding-top: 16px;
+        position: relative;
+      }
+      a {
+        color: rgba(216, 216, 216, 0.726);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 20px;
+      }
+        a:hover {
+          color: white;
+        }
+        a::before {
+          content: "";
+          display: block;
+          height: 5px;
+          width: 100%;
+          background-color: #ad3225;
+          position: absolute;
+          top: 0;
+          width: 0%;
+          opacity: 0.5;
+          transition: all ease-in-out 250ms;
+        }
+        a:hover::before {
+            width: 100%;
+        }
+      }
+    }

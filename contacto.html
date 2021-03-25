@@ -6,6 +6,8 @@
     <title>Attack On Titan Shop </title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
     <meta name="keywords"  content="SHINGEKI NO KYOJIN, ATTACK ON TITAN, MANGA, ANIME">
 
@@ -48,37 +50,47 @@
     <br><br><br>
 
 
-    <div class="flex">
-    
-        <form class="FormularioTabla">
-            <label for="Nombre" placeholder=>Nombre: </label>
-            <input type="text" name="Nombre" placeholder="Nombre Y Apellido">
-            <br>
-            <label class="correr" for="email">Email:</label>
-            <input type="email" name="email" placeholder="Nombre@ejemplo.com">
-            <br>
-            <label  for="Asunto">Asunto: </label>
-            <select name="Asunto">
-                <option value="Libro_0"> Otro </option>
-                <option value="Libro_1"> Duda </option>
-                <option value="Libro_2"> Envío </option>
-                <option value="Libro_3"> Disponibilidad </option>
-            </select>
-            <br>
-            <br>
-            <label class="center--tabla" for="Comentarios"> Comentarios </label>
-            <br>
-            <textarea class="" name="Comentarios" id="" cols="30" rows="10"></textarea>
-            <br>
-            <div class="center">
-            <input type="submit" value="Enviar"> <input type="reset" value="Reiniciar">
+
+    <form action="" class="main-form needs-validation" novalidate>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="firstname">Nombre</label>
+                    <input type="text" name="firstname" id="firstname" class="form-control is-invalid">
+                </div>
             </div>
-            <br>
-            <br>
-            <label for="noticias">¿Desea recibir el Newsletter?: </label>
-            <input type="checkbox" name="Si">
-        </form>
-    </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="lastname">Apellido</label>
+                    <input type="text" name="lastname" id="lastname" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Mensaje</label>
+            <textarea class="" name="Comentarios" id="" cols="60" rows="5"></textarea>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+                ¿Desea recibir el Newsletter?
+            </label>
+          </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -88,6 +100,13 @@
 
 
 
-    
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
 </body>
 </html>

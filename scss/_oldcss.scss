@@ -96,13 +96,7 @@
   
   /* E-SHOP .CSS */
   
-  .EShop {
-    background-image: url(https://i.pinimg.com/originals/09/a4/58/09a4582c26324a6077dd920438b53e9a.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: unset;
-  }
-  
+
   .block {
     display: block;
     text-align: center;
@@ -134,13 +128,6 @@
     padding: 10px;
     margin: 10px;
   }
-  
-  
-  /* FORMULARIOTABLA */
-  
-
-  
-  
   
   /* sucursales */
   
@@ -276,44 +263,4 @@
   /* Contacto */
   
   
-  .flex {
-    display: flex;
-    justify-content: center;
-
-    .center--tabla {
-      align-items: center;
-      justify-content: center;
-      display: flex;
-    }
-  
-  }
-
-  .FormularioTabla {
-    padding-top: 40px;
-    font-size: 200%;
-    display: flexbox;
-    flex-direction: column;
-  }
-  textarea {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    text-align: center;
-  }
-  
-  input {
-    font-size: large;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-  }
-  select {
-    font-size: large;
-  }
-
-  .correr {
-    margin-right: 30px;
-  }
-
   

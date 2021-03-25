@@ -202,7 +202,6 @@ hr {
     width: 90%; } }
 
 /* E-SHOP .CSS */
-
 .block {
   display: block;
   text-align: center; }
@@ -229,7 +228,6 @@ th {
   padding: 10px;
   margin: 10px; }
 
-/* FORMULARIOTABLA */
 /* sucursales */
 .FormularioTabla {
   padding-top: 40px;
@@ -249,10 +247,7 @@ select {
   grid-gap: 20px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, auto);
-  grid-template-areas: "header header header"
- "contenido contenido sidebar"
- "widget-1 widget-2 sidebar"
- "footer footer footer"; }
+  grid-template-areas: "header header header" "contenido contenido sidebar" "widget-1 widget-2 sidebar" "footer footer footer"; }
 
 .contenedor > div,
 .contenedor .header,
@@ -312,11 +307,7 @@ select {
 
 @media screen and (max-width: 768px) {
   .contenedor {
-    grid-template-areas: "header header header"
- "contenido contenido contenido"
- "sidebar sidebar sidebar"
- "widget-1 widget-1 widget-2"
- "footer footer footer"; } }
+    grid-template-areas: "header header header" "contenido contenido contenido" "sidebar sidebar sidebar" "widget-1 widget-1 widget-2" "footer footer footer"; } }
 
 .foto-responsive {
   width: 90%;
@@ -339,39 +330,6 @@ select {
   width: 100%; }
 
 /* Contacto */
-.flex {
-  display: flex;
-  justify-content: center; }
-  .flex .center--tabla {
-    align-items: center;
-    justify-content: center;
-    display: flex; }
-
-.FormularioTabla {
-  padding-top: 40px;
-  font-size: 200%;
-  display: flexbox;
-  flex-direction: column; }
-
-textarea {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  text-align: center; }
-
-input {
-  font-size: large;
-  justify-content: center;
-  padding: 0;
-  margin: 0; }
-
-select {
-  font-size: large; }
-
-.correr {
-  margin-right: 30px; }
-
 .cartas {
   display: flex;
   flex-direction: row;
@@ -508,3 +466,10 @@ video {
   min-width: 100%;
   min-height: 100%;
   transform: translateX(calc((100% - 100vw) / 2)); }
+
+.main-form {
+  width: 450px;
+  margin: auto; }
+
+label {
+  color: white; }

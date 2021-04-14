@@ -6,7 +6,7 @@
       margin: 0;
       padding: 0;
       font-weight: 300;
-      font-family: 'Work Sans', sans-serif;
+      font-family: $TipoDeFuente;
   }
   
   .contenedor {
@@ -82,70 +82,13 @@
 
   
   @media only screen and (max-width: 400px) {
-  
     iframe {
       width: 90%;
     }
-  
-  
-  
-  
-  }
-  
-  
-  
-  /* E-SHOP .CSS */
-  
-
-  .block {
-    display: block;
-    text-align: center;
-  
-  }
-  
-  table {
-    border: 3px solid;
-    background-color: #231f20;
-    margin: auto;
-    padding: auto;
-    
-  }
-  
-  tr,
-  td {
-    border: 1px solid;
-  }
-  
-  th {
-    background-color: white;
-    border: 1px solid;
-  }
-  .tabla1 {
-    margin-top: 80px;
-    font-size: 200%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    padding: 10px;
-    margin: 10px;
   }
   
   /* sucursales */
-  
-  
-  
-  .FormularioTabla {
-    padding-top: 40px;
-    font-size: 200%;
-  }
-  
-  input {
-    font-size: large;
-  }
-  select {
-    font-size: large;
-  }
-  
-  
+
   
   .contenedor {
     width: 90%;
@@ -176,6 +119,7 @@
     background: radial-gradient(circle, rgba(173,50,37,1) 0%, rgba(10,8,8,1) 100%);  color: #fff;
     grid-area: header;
     text-align: center;
+    font-size: 1.2em;
   }
   
   .contenedor .contenido {
@@ -223,6 +167,7 @@
     grid-area: footer;
   }
   
+  
   @media screen and (max-width: 768px){
     .contenedor {
         grid-template-areas: "header header header"
@@ -259,8 +204,7 @@
     width: 100%;
   }
   
-  
-  /* Contacto */
-  
+
+
   
   

@@ -4,6 +4,8 @@
 @import 'animaciones';
 
 
+
+
 #logo {
   max-width: 60%;
   margin-top: 15px;
@@ -21,24 +23,27 @@ article {
     justify-content: center;
     align-items: center;
     margin:auto;
+    border-radius: 10px;
   }
-  h1 {
+  .h--article {
     margin-top: 100px;
     margin-bottom: 0px;
     margin-left: 20px;
-    color: #ad3225;
+    color: $colorletra;
     font-style: italic;
     font-weight: bold;
     font-size: 3em;
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: $TipoDeFuente;
     letter-spacing: 2px;
     text-transform: uppercase;
     
   }
+
+  
   p {
     display: flex;
     color: $colorletra;
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: $TipoDeFuente;
     font-size: 1.5em;
     font-weight: normal;
     margin-left: 20px;
@@ -58,12 +63,6 @@ hr {
 .center {
   text-align: center;
 }
-
-.sinopsis {
-  text-align: center;
-
-}
-
 
 
 #myVideo {
@@ -87,18 +86,16 @@ hr {
   opacity: .95;
   z-index: -1;
 
+  /* Agrega una capa para oscurecer el video */
 
 }
-
-
-
 
 
 @import 'oldcss';
 
 
 
-.cartas {
+.cartas--personajes {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -106,7 +103,7 @@ hr {
   justify-content: center;  
 
 }
-.carta {
+.carta--personaje {
   display: grid;
   grid-template-columns: 20rem;
   grid-template-rows: 15rem 13rem 5rem;
@@ -124,7 +121,7 @@ hr {
   cursor: pointer;
 }
 
-.carta:hover {
+.carta--personaje:hover {
   opacity: 1;
   transform: scale(1.10);
   box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
@@ -143,7 +140,7 @@ hr {
   grid-area: text;
   margin: 10px;
   font-size: 1em;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: $TipoDeFuente;
   color: white;
 
 }
@@ -171,67 +168,72 @@ hr {
   margin: auto;
   perspective: 600px;
   position: relative;
-  margin-top: 50px;
-}
-
-.content-carrousel{
-  width: 100%;
-  position: absolute;
-  animation: rotar 25s infinite linear;
-  transform-style: preserve-3d;
-}
-
-.content-carrousel:hover{
-  animation-play-state: paused;
-  cursor: pointer;
-}
-
-.content-carrousel figure{
-  width: 50%;
-  height: 160px;
-  overflow: hidden;
-  position: absolute;
-  box-shadow: 0px 0px 10px 0px #832015;
-  transition: all 300ms;
-  border-radius: 5px;
-}
-
-.content-carrousel figure:hover{
-  box-shadow: 0px 0px 0px 0px #ad3225;
-  transition: all 300ms;
-}
-
-.content-carrousel figure:nth-child(1){transform: rotateY(0deg) translateZ(300px);}
-.content-carrousel figure:nth-child(2){transform: rotateY(40deg) translateZ(300px);}
-.content-carrousel figure:nth-child(3){transform: rotateY(80deg) translateZ(300px);}
-.content-carrousel figure:nth-child(4){transform: rotateY(120deg) translateZ(300px);}
-.content-carrousel figure:nth-child(5){transform: rotateY(160deg) translateZ(300px);}
-.content-carrousel figure:nth-child(6){transform: rotateY(200deg) translateZ(300px);}
-.content-carrousel figure:nth-child(7){transform: rotateY(240deg) translateZ(300px);}
-.content-carrousel figure:nth-child(8){transform: rotateY(280deg) translateZ(300px);}
-.content-carrousel figure:nth-child(9){transform: rotateY(320deg) translateZ(300px);}
-
-.content-carrousel img{
-  width: 100%;
-  transition: all 300ms;
-}
-
-.content-carrousel img:hover{
-  transform: scale(1.1);
-  transition: all 300ms;
-}
-
-@keyframes rotar{
-  from{
-      transform: rotateY(0deg);
-  }to{
-      transform: rotateY(360deg);
+  margin-top: 30px;
+  align-items: center;
+  text-align: center;
+  .content-carrousel{
+    width: 100%;
+    position: absolute;
+    animation: rotar 25s infinite linear;
+    transform-style: preserve-3d;
+    figure{
+      width: 50%;
+      height: 160px;
+      overflow: hidden;
+      position: absolute;
+      box-shadow: 0px 0px 10px 0px #832015;
+      transition: all 300ms;
+      border-radius: 5px;
+    }
+    
+    figure:hover{
+      box-shadow: 0px 0px 0px 0px #ad3225;
+      transition: all 300ms;
+    }
+    
+    figure:nth-child(1){transform: rotateY(0deg) translateZ(300px);}
+    figure:nth-child(2){transform: rotateY(40deg) translateZ(300px);}
+    figure:nth-child(3){transform: rotateY(80deg) translateZ(300px);}
+    figure:nth-child(4){transform: rotateY(120deg) translateZ(300px);}
+    figure:nth-child(5){transform: rotateY(160deg) translateZ(300px);}
+    figure:nth-child(6){transform: rotateY(200deg) translateZ(300px);}
+    figure:nth-child(7){transform: rotateY(240deg) translateZ(300px);}
+    figure:nth-child(8){transform: rotateY(280deg) translateZ(300px);}
+    figure:nth-child(9){transform: rotateY(320deg) translateZ(300px);}
+    
+    img{
+      width: 100%;
+      transition: all 300ms;
+    }
+    
+    img:hover{
+      transform: scale(1.1);
+      transition: all 300ms;
+    }
+  }
+  
+  .content-carrousel:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+  }
+  
+  
+  
+  @keyframes rotar{
+    from{
+        transform: rotateY(0deg);
+    }to{
+        transform: rotateY(360deg);
+    }
   }
 }
 
-.footer--separar {
-  margin-top: 570px;
+
+
+.footer--contacto {
+  margin-top: 120px;
 }
+
 
 video {
   position: fixed;
@@ -246,8 +248,61 @@ video {
   width: 450px;
   margin: auto;
 }
+g
 
 
 label {
   color: white;
 }
+
+.btn-primary {
+  background-color: $colorletra;
+  border: $colorletra;
+  width: 200px;
+  margin-left: 120px;
+  margin-top: 20px;
+
+  
+}
+.h--seo {
+  color: white;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 3em;
+  font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+
+  
+}
+
+.h--personajes {
+  text-align: center;
+  margin-top: 80px;
+
+}
+
+.h--e-shop {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.footer--E-Shop {
+  margin-top: 500px;
+}
+
+.h--contacto {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.footer--contacto {
+  height: 190px;
+  margin-bottom: 20px ;
+}
+
+
+
+
+

@@ -1,64 +1,70 @@
-@import 'variables';
-
+@import "variables";
 
 body {
-    label {color: white;}
     background-color: #0a0808;
     font-family: $TipoDeFuente;
-    footer{
-      background: radial-gradient(circle, rgba(173,50,37,1) 0%, rgba(10,8,8,1) 100%);;
-      height: auto;
-      width: auto;
-      font-family: $TipoDeFuente;
-      color: #fff;
-      opacity: .5;
-      text-align: center;
-  }
-  .footer-content{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      text-align: center;
-      h3{
-        font-size: 1.8rem;
-        font-weight: 400;
-        text-transform: capitalize;
-        line-height: 1rem;
+
+    label {
+        color: white;
     }
-    p{
-        max-width: 500px;
-        margin: 0px auto;
-        line-height: 28px;
-        font-size: 14px;
+
+    footer {
+        background: radial-gradient(circle,
+                rgba(173, 50, 37, 1) 0%,
+                rgba(10, 8, 8, 1) 100%);
+        height: auto;
+        width: auto;
+        font-family: $TipoDeFuente;
+        color: #fff;
+        opacity: 0.5;
+        text-align: center;
     }
-    .socials{
-        list-style: none;
-        display: inline-flex;
+
+    .footer-content {
+        display: flex;
         align-items: center;
         justify-content: center;
-        margin-right: 50px;
-        li{
-          margin: 0 5px;
-      }
-      a{
-          text-decoration: none;
-          color: #fff;
-      }
-      a i{
-          font-size: 1.2rem;
-          transition: color .4s ease;      
-      }
-      a:hover i{
-          color: aqua;
-      }
+        flex-direction: column;
+        text-align: center;
+
+        h3 {
+            font-size: 1.8rem;
+            font-weight: 400;
+            text-transform: capitalize;
+            line-height: 1rem;
+        }
+
+        p {
+            max-width: 500px;
+            margin: 0px auto;
+            line-height: 28px;
+            font-size: 14px;
+        }
+
+        .socials {
+            list-style: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 50px;
+
+            li {
+                margin: 0 5px;
+            }
+
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+
+            a i {
+                font-size: 1.2rem;
+                transition: color 0.4s ease;
+            }
+
+            a:hover i {
+                color: aqua;
+            }
+        }
     }
-  }
 }
-
-
-
-
-
-
-
